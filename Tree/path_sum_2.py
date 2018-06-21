@@ -12,7 +12,7 @@
 #    [5, 4, 11, 2],
 #    [5, 8, 4, 5]
 # ]
-from binarytree import Node, show
+from binarytree import Node
 
 
 def path_sum(root, sum):
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     node.left.left.right = Node(2)
     node.right.right.right = Node(5)
 
-    show(node)
+    print(node)
 
     print('sum = 22')
     print('result:')

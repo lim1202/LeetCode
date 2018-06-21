@@ -1,6 +1,9 @@
-# Given a binary tree, determine if it is height-balanced.
-# For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
-from binarytree import Node, tree, show
+"""Balanced Binary Tree
+
+Given a binary tree, determine if it is height-balanced.
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+"""
+from binarytree import Node, tree
 
 
 def is_balanced(root):
@@ -34,7 +37,7 @@ def get_height(root):
 
 if __name__ == "__main__":
     my_tree = tree()
-    show(my_tree)
+    print(my_tree)
     print('Is tree balanced?', is_balanced(my_tree))
 
     node = Node(0)
@@ -44,5 +47,5 @@ if __name__ == "__main__":
     node.left.right = Node(4)
     node.right.left = Node(5)
     node.right.right = Node(6)
-    show(node)
+    print(node)
     print('Is tree balanced?', is_balanced(node))

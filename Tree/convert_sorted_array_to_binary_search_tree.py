@@ -1,5 +1,5 @@
 # Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
-from binarytree import Node, show
+from binarytree import Node
 
 
 def sorted_array_to_bst(nums):
@@ -22,4 +22,4 @@ def build(nums, start, end):
 if __name__ == '__main__':
     nums = [1, 2, 3, 4, 5, 6, 7]
     print(nums)
-    show(sorted_array_to_bst(nums))
+    print(sorted_array_to_bst(nums))

@@ -17,7 +17,7 @@
 #            5
 #             \
 #              6
-from binarytree import Node, tree, show
+from binarytree import Node, tree
 
 
 def flatten(root):
@@ -56,8 +56,8 @@ def append_right(root, val):
 if __name__ == '__main__':
     my_tree = tree()
 
-    show(my_tree)
+    print(my_tree)
 
     print('Flatten...')
 
-    show(flatten(my_tree))
+    print(flatten(my_tree))

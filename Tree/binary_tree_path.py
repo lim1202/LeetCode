@@ -1,14 +1,16 @@
-"""Binary Tree Path"""
-# Given a binary tree, return all root-to-leaf paths.
-# For example, given the following binary tree:
-#    1
-#  /   \
-# 2     3
-#  \
-#   5
-# All root-to-leaf paths are:
-# ["1->2->5", "1->3"]
-from binarytree import tree, show
+"""Binary Tree Path
+
+Given a binary tree, return all root-to-leaf paths.
+For example, given the following binary tree:
+   1
+ /   \
+2     3
+ \
+  5
+All root-to-leaf paths are:
+["1->2->5", "1->3"]
+"""
+from binarytree import tree
 
 
 def binary_tree_paths(root):
@@ -55,5 +57,5 @@ def generate_path(paths):
 
 if __name__ == "__main__":
     MY_TREE = tree()
-    show(MY_TREE)
+    print(MY_TREE)
     print(binary_tree_paths(MY_TREE))

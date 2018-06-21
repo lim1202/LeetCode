@@ -11,7 +11,7 @@
 #   2   2
 #    \   \
 #    3    3
-from binarytree import Node, tree, show
+from binarytree import Node, tree
 
 
 def is_symmetric(root):
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     node1.left.right = Node(4)
     node1.right.left = Node(4)
     node1.right.right = Node(3)
-    show(node1)
+    print(node1)
     print('Is symmetric?', is_symmetric(node1))
 
     node2 = Node(1)
@@ -50,6 +50,6 @@ if __name__ == '__main__':
     node2.right = Node(2)
     node2.left.right = Node(3)
     node2.right.right = Node(3)
-    show(node2)
+    print(node2)
     print('Is symmetric?', is_symmetric(node2))
 

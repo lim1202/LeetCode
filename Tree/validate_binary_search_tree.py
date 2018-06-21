@@ -5,8 +5,7 @@
 # The right subtree of a node contains only nodes with keys greater than the node's key.
 # Both the left and right subtrees must also be binary search trees.
 import sys
-from binarytree import convert, show
-
+from binarytree import build
 
 def is_valid_bst(root):
     """Return is a valid BST"""
@@ -25,9 +24,9 @@ def valid(node, min_value, max_value):
 
 
 if __name__ == '__main__':
-    TREE1 = convert([7, 3, 2, 6, 9, 4, 1])
-    show(TREE1)
+    TREE1 = build([7, 3, 2, 6, 9, 4, 1])
+    print(TREE1)
     print("Is a valid binary search tree?", is_valid_bst(TREE1))
-    TREE2 = convert([4, 2, 6, 1, 3, 5, 7])
-    show(TREE2)
+    TREE2 = build([4, 2, 6, 1, 3, 5, 7])
+    print(TREE2)
     print("Is a valid binary search tree?", is_valid_bst(TREE2))

@@ -1,6 +1,6 @@
 # Given preorder and inorder traversal of a tree, construct the binary tree.
 # Given inorder and postorder traversal of a tree, construct the binary tree.
-from binarytree import Node, tree, show
+from binarytree import Node, tree
 
 
 def build_tree(inorder, preorder=None, postorder=None):
@@ -47,9 +47,9 @@ def build_inorder_postorder(inorder, s0, e0, postorder, s1, e1):
 
 
 if __name__ == '__main__':
-    show(build_tree([4, 2, 5, 1, 6, 3, 7], None,  [4, 5, 2, 6, 7, 3, 1]))
-    show(build_tree([4, 2, 1, 5, 3, 6, 7], None, [4, 2, 5, 7, 6, 3, 1]))
-    show(build_tree([4, 5, 2, 6, 1, 3, 7], None, [4, 5, 6, 2, 7, 3, 1]))
-    show(build_tree([4, 2, 5, 1, 6, 3, 7], [1, 2, 4, 5, 3, 6, 7]))
-    show(build_tree([4, 2, 1, 5, 3, 6, 7], [1, 2, 4, 3, 5, 6, 7]))
-    show(build_tree([4, 5, 2, 6, 1, 3, 7], [1, 2, 5, 4, 6, 3, 7]))
+    print(build_tree([4, 2, 5, 1, 6, 3, 7], None,  [4, 5, 2, 6, 7, 3, 1]))
+    print(build_tree([4, 2, 1, 5, 3, 6, 7], None, [4, 2, 5, 7, 6, 3, 1]))
+    print(build_tree([4, 5, 2, 6, 1, 3, 7], None, [4, 5, 6, 2, 7, 3, 1]))
+    print(build_tree([4, 2, 5, 1, 6, 3, 7], [1, 2, 4, 5, 3, 6, 7]))
+    print(build_tree([4, 2, 1, 5, 3, 6, 7], [1, 2, 4, 3, 5, 6, 7]))
+    print(build_tree([4, 5, 2, 6, 1, 3, 7], [1, 2, 5, 4, 6, 3, 7]))

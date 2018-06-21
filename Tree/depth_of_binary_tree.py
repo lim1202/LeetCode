@@ -1,7 +1,7 @@
 # Given a binary tree, find its maximum depth.
 # The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 import sys
-from binarytree import tree, show
+from binarytree import tree
 
 
 def max_depth(root):
@@ -53,6 +53,6 @@ def min_depth(root):
 if __name__ == '__main__':
     # Generate a random binary tree and return its root
     my_tree = tree()
-    show(my_tree)
+    print(my_tree)
     print('Max depth: {0}'.format(max_depth(my_tree)))
     print('Min depth: {0}'.format(min_depth(my_tree)))

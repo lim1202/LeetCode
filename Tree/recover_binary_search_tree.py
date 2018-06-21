@@ -1,10 +1,13 @@
-"""Recover Binary Search Tree"""
-# Two elements of a binary search tree (BST) are swapped by mistake.
-# Recover the tree without changing its structure.
-# Note:`
-# A solution using O(n) space is pretty straight forward.
-# Could you devise a constant space solution?
-from binarytree import convert, show
+"""Recover Binary Search Tree
+
+Two elements of a binary search tree (BST) are swapped by mistake.
+Recover the tree without changing its structure.
+
+Note:
+    A solution using O(n) space is pretty straight forward.
+    Could you devise a constant space solution?
+"""
+from binarytree import build
 
 
 def recover_tree(root):
@@ -50,9 +53,10 @@ def recover_tree(root):
             pre1.value = pre2.value
             pre2.value = temp
 
+    return
 
 if __name__ == "__main__":
-    TREE1 = convert([4, 2, 7, 1, 3, 6, 5])
-    show(TREE1)
-    recover_tree(TREE1)
-    show(TREE1)
+    my_tree = build([4, 2, 7, 1, 3, 6, 5])
+    print(my_tree)
+    recover_tree(my_tree)
+    print(my_tree)

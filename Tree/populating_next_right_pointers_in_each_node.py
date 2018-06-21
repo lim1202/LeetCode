@@ -12,7 +12,7 @@
 #       2 -> 3 -> NULL
 #      / \    \
 #     4-> 5 -> 7 -> NULL
-from binarytree import tree, show
+from binarytree import tree
 
 
 def connect(root):
@@ -52,5 +52,5 @@ def connect(root):
 
 if __name__ == "__main__":
     my_tree = tree()
-    show(my_tree)
+    print(my_tree)
     print(connect(my_tree))

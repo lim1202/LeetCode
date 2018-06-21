@@ -9,7 +9,7 @@
 # The root-to-leaf path 1->2 represents the number 12.
 # The root-to-leaf path 1->3 represents the number 13.
 # Return the sum = 12 + 13 = 25.
-from binarytree import convert, show
+from binarytree import build
 
 def sum_numbers(root):
     """Return sum of all root-to-leaf numbers"""
@@ -48,6 +48,6 @@ def vec2num(vec):
 
 
 if __name__ == '__main__':
-    MY_TREE = convert([1, 2, 3, 4, 5, 6, 7])
-    show(MY_TREE)
+    MY_TREE = build([1, 2, 3, 4, 5, 6, 7])
+    print(MY_TREE)
     print("sum:", sum_numbers(MY_TREE))

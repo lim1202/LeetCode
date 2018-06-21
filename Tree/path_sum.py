@@ -8,7 +8,7 @@
 #          /  \      \
 #         7    2      1
 # return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
-from binarytree import Node, show
+from binarytree import Node
 
 
 def has_path_sum(root, sum):
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     node.left.left.left = Node(7)
     node.right.right.right = Node(1)
 
-    show(node)
+    print(node)
 
     print('Exist a root-to-leaf path which sum is 22?', has_path_sum(node, 22))
     print('Exist a root-to-leaf path which sum is 27?', has_path_sum(node, 27))

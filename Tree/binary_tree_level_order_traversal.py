@@ -1,4 +1,4 @@
-from binarytree import tree, show
+from binarytree import tree
 
 
 # Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
@@ -131,7 +131,7 @@ def get_height(node):
 
 if __name__ == "__main__":
     my_tree = tree()
-    show(my_tree)
+    print(my_tree)
 
     print('Level order:')
     orders = level_order(my_tree)
