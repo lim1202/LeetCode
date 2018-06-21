@@ -1,8 +1,11 @@
-'''Hello LeetCode'''
-# Comment
+"""Hello
+
+Comment
+"""
 
 def hello():
-    return 'Hello LeetCode'
+    ret = 'hello'
+    return ret
 
 
 if __name__ == '__main__':
