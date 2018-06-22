@@ -65,7 +65,7 @@ def generate(start, stop):
 
 if __name__ == '__main__':
     for i in range(1, 10):
-        print('Given  n = {0}, there are a total of {1} unique BST''s.'.format(i, num_trees(i)))
+        print('Given n = {0}, there are a total of {1} unique BST''s.'.format(i, num_trees(i)))
         pass
 
     print('Given n = 3, return all 5 unique BST''s shown below')
