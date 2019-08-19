@@ -3,7 +3,7 @@
 def bubble_sort(unsorted_list):
     """Bubble Sort"""
 
-    if not unsorted_list: 
+    if not unsorted_list:
         return None
 
     nums = unsorted_list.copy()
