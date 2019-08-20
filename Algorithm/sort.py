@@ -1,5 +1,7 @@
 """Sort"""
 
+import random
+
 def bubble_sort(unsorted_list):
     """Bubble Sort"""
     if not unsorted_list:
@@ -38,11 +40,12 @@ def insertion_sort(unsorted_list):
     return nums
 
 if __name__ == "__main__":
-    TEST_LIST = [3, 5, 4, 1, 2, 6]
-    print('Test array: {}'.format(TEST_LIST))
+    RANDOM_LIST = [i for i in range(1, 11)]
+    random.shuffle(RANDOM_LIST)
+    print('Test array: {}'.format(RANDOM_LIST))
 
-    BS_LIST = bubble_sort(TEST_LIST)
+    BS_LIST = bubble_sort(RANDOM_LIST)
     print('Bubble Sort result: {}'.format(BS_LIST))
 
-    IS_LIST = insertion_sort(TEST_LIST)
+    IS_LIST = insertion_sort(RANDOM_LIST)
     print('Insertion Sort result: {}'.format(IS_LIST))
