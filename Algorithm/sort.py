@@ -1,6 +1,7 @@
 """Sort"""
 
 import random
+import time
 
 def bubble_sort(unsorted_list):
     """Bubble Sort"""
@@ -44,8 +45,12 @@ if __name__ == "__main__":
     random.shuffle(RANDOM_LIST)
     print('Test array: {}'.format(RANDOM_LIST))
 
+    start_time = time.time()
     BS_LIST = bubble_sort(RANDOM_LIST)
     print('Bubble Sort result: {}'.format(BS_LIST))
+    print('Duration: {} ms'.format((time.time() - start_time) * 1000))
 
+    start_time = time.time()
     IS_LIST = insertion_sort(RANDOM_LIST)
     print('Insertion Sort result: {}'.format(IS_LIST))
+    print('Duration: {} ms'.format((time.time() - start_time) * 1000))
