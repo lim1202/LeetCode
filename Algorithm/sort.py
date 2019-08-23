@@ -86,6 +86,38 @@ def merge_sort(nums):
     return
 
 
+def quick_sort(nums):
+    """Quick Sort"""
+    if not nums:
+        return
+
+    def patition(A, p, r):
+        pivot = A[r]
+        i = p
+
+        for j in range(p, r):
+            if A[j] < pivot:
+                A[i], A[j] = A[j], A[i]
+                i = i + 1
+
+        A[i], A[r] = A[r], A[i]
+
+        return i
+    
+    def quick_sort_c(C, p, r):
+        if p >= r:
+            return
+
+        q = patition(C, p, r)
+        quick_sort_c(C, p, q-1)
+        quick_sort_c(C, q+1, r)
+
+        return
+
+    quick_sort_c(nums, 0, len(nums)-1)
+
+    return
+
 if __name__ == "__main__":
     RANDOM_LIST = [i for i in range(1, 11)]
     random.shuffle(RANDOM_LIST)
@@ -107,4 +139,10 @@ if __name__ == "__main__":
     start_time = time.time()
     merge_sort(MS_LIST)
     print('Merge Sort result: {}'.format(MS_LIST))
+    print('Duration: {} ms'.format((time.time() - start_time) * 1000))
+
+    QS_LIST = RANDOM_LIST.copy()
+    start_time = time.time()
+    quick_sort(QS_LIST)
+    print('Quick Sort result: {}'.format(QS_LIST))
     print('Duration: {} ms'.format((time.time() - start_time) * 1000))
